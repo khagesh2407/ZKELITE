@@ -14,12 +14,12 @@ const CONFIG = {
     methods: ['upi', 'cod'],
     upi: {
       enabled: true,
-      upiId: 'business@upi', // Replace with actual UPI ID
-      qrCode: '/assets/upi-qr.png' // Add your UPI QR code
+      upiId: '7000421094@upi', // LIVE UPI ID
+      qrCode: '/assets/upi-qr.png'
     },
     cod: {
       enabled: true,
-      chargePercentage: 0, // COD charge percentage
+      chargePercentage: 0,
       minAmount: 0
     }
   },
@@ -29,11 +29,10 @@ const CONFIG = {
     service: 'formsubmit.co',
     supportEmail: 'support@zkelite.store',
     notificationEmail: 'support@zkelite.store',
-    // Using FormSubmit.co endpoint - no backend needed
     submitEndpoint: 'https://formsubmit.co/support@zkelite.store'
   },
 
-  // Products
+  // Products - 7 Items
   products: [
     {
       id: 1,
@@ -93,6 +92,22 @@ const CONFIG = {
     businessCategory: 'HEALTH_WELLNESS',
     deepLink: 'https://wa.me/918224021324',
     preFilledMessage: 'Hello! I would like to know more about Zorabliss products.'
+  },
+
+  // Domain Configuration
+  domain: {
+    primary: 'zkelite.store',
+    hosted: 'khagesh2407.github.io/ZKELITE/agents/',
+    dnsStatus: 'CONFIGURED',
+    sslStatus: 'ACTIVE'
+  },
+
+  // Delivery Configuration
+  delivery: {
+    charge: 50,
+    freeAbove: 500,
+    areas: ['All India'],
+    estimatedDays: '3-5 business days'
   }
 };
 
